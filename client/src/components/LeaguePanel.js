@@ -2,10 +2,26 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export class LeaguePanel extends Component {
+  getStyle1 = () => {
+    return {
+      background: '#f4f4f4',
+      padding: '10px',
+      borderBottom: '1px #ccc dotted'
+    }
+  }
+
+  getStyle2 = () => {
+    return {
+      background: '#f4f4f4',
+      padding: '10px',
+      borderBottom: '1px #ccc dotted'
+    }
+  }
+
   render() {
     return (
       <div>
-        <div className = 'Title'>
+        <div className = 'Title' style={this.getStyle1()}>
           <h3>
               {this.props.title}
           </h3>
@@ -28,4 +44,9 @@ export class LeaguePanel extends Component {
 LeaguePanel.propTypes = {
   players: PropTypes.array.isRequired
 }
+
+const itemStyle = {
+  backgroundColor: '#f4f4f4'
+}
+
 export default LeaguePanel
