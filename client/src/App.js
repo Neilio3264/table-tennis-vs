@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
+import LeaguePanels from './components/LeaugePanels';
 
-function App() {
-  return (
-    <div className="App">
-      <p>TTVS</p>
-    </div>
-  );
+class App extends Component {
+  state = {
+    LeaguePanels: [{ id: 1, title: 'League A', players: ['Player 1', 'Player 2'] }],
+  };
+  render() {
+    return (
+      <div className="App">
+        <h1>TTVS</h1>
+        <div>
+          <LeaguePanels />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
