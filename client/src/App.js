@@ -4,7 +4,8 @@ import LeaguePanels from './components/LeaugePanels';
 
 class App extends Component {
   state = {
-    panels: [{ id: 1, title: 'League A', players: ['Player 1', 'Player 2'] }],
+    panels: [{ id: 1, title: 'League A', players: ['Player 1', 'Player 2'] }, 
+    { id: 2, title: 'League B', players: ['Player 1', 'Player 2', 'Player 3'] }]
   };
 
   render() {

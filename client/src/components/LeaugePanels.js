@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Player from './Player'
+import LeaguePanel from './LeaguePanel'
 import PropTypes from 'prop-types'
 
 class LeaguePanels extends Component {
@@ -11,8 +11,9 @@ class LeaguePanels extends Component {
   }
 }
 
+// PropTypes
 LeaguePanels.propTypes = {
-  
+  panels: PropTypes.array.isRequired
 }
 
 export default LeaguePanels;
