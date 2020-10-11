@@ -8,11 +8,7 @@ export class Player extends Component {
           <p>{this.props.name}</p>
         </div>
         <div className = 'elo'>
-<<<<<<< HEAD
           <p>{this.props.elo}</p>
-=======
-          <p>{this.props.elo}</p>
->>>>>>> 9c2c6a75ed640760fb8944ce292f96715586c70f
         </div>
       </div>
     )
