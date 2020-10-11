@@ -34,7 +34,6 @@ class App extends Component {
   };
 
   createLeagues = (amount) => {
-    console.log('flag 1');
     const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'];
     let stateArr = [];
     for (let i = 0; i < amount; i++) {
@@ -91,7 +90,6 @@ class App extends Component {
       <div className="App">
         <Header />
         <CreateLeagues createLeagues={this.createLeagues} />
-        {console.log(this.getLeaguePlayers(2, 10))}
         <div className="panelContainer">
           <LeaguePanels panels={this.state.panels} />
         </div>
