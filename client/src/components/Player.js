@@ -10,4 +10,9 @@ export class Player extends Component {
   }
 }
 
+Player.propTypes = {
+  //name: ''
+  //elo: ''
+}
+
 export default Player

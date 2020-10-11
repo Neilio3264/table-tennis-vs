@@ -2,15 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 export class LeaguePanel extends Component {
-  getStyle1 = () => {
-    return {
-      background: '#f4f4f4',
-      padding: '10px',
-      borderBottom: '1px #ccc dotted'
-    }
-  }
-
-  getStyle2 = () => {
+  getStyle = () => {
     return {
       background: '#f4f4f4',
       padding: '10px',
@@ -21,7 +13,7 @@ export class LeaguePanel extends Component {
   render() {
     return (
       <div>
-        <div className = 'Title' style={this.getStyle1()}>
+        <div className = 'Title' style={this.getStyle()}>
           <h3>
               {this.props.title}
           </h3>
