@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 export class CreateLeagues extends Component {
   state = {
@@ -22,25 +21,20 @@ export class CreateLeagues extends Component {
             className="inputs"
             type="text"
             name="amount"
-            //style={{flex: '5', padding: '5px'}}
             placeholder="Number of Leagues"
             value={this.state.amount}
             onChange={this.onChange}
           />
           <input
-            className="inputs"
+            //className="inputs"
             type="submit"
             value="Create"
             className="btn"
-            //style={{flex: '1'}}
           />
         </form>
       </div>
     );
   }
 }
-
-// CreateLeagues.propTypes = {
-// }
 
 export default CreateLeagues;

@@ -30,8 +30,4 @@ LeaguePanel.propTypes = {
   players: PropTypes.array.isRequired
 }
 
-const itemStyle = {
-  backgroundColor: '#f4f4f4'
-}
-
 export default LeaguePanel
