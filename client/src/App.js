@@ -34,22 +34,29 @@ class App extends Component {
   };
 
   createLeagues = (amount) => {
+    console.log('flag 1')
     const letters = ['A','B','C','D','E','F','G','H','I','J'];
+    let stateArr = [];
     for (let i = 0; i < amount; i++)
     {
+      console.log('flag 2')
       const newLeague = {
         id: uuid.v4(),
-        title: `League ${letters[amount]}`
+        title: `League ${letters[i]}`,
+        players: ['Tim', 'Dan', 'Neil', 'Hunter']
       }
-      this.setState({panels: [...this.state.panels, newLeague]})
+      // this.setState({panels: [...this.state.panels, newLeague]})
+      stateArr.push(newLeague);
     }
+    this.setState({panels: stateArr})
+    console.log('flag 3')
   }
 
   render() {
     return (
       <div className="App">
         <h1>TTVS</h1>
-        <CreateLeagues addTodo={this.createLeagues}/>
+        <CreateLeagues createLeagues={this.createLeagues}/>
         <div>
           <LeaguePanels panels={this.state.panels} />
         </div>

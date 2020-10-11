@@ -8,8 +8,8 @@ export class CreateLeagues extends Component {
 
   onSubmit = (e) => {
     e.preventDefault();
-    this.props.createLeague(this.state.amount)
-    this.setState({amount:''})
+    this.props.createLeagues(this.state.amount)
+    this.setState({amount: ''})
   }
 
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
@@ -19,24 +19,24 @@ export class CreateLeagues extends Component {
       <form onSubmit={this.onSubmit} style={{display:'flex'}}>
         <input 
           type="text"
-          name="title"
-          style={{flex: '5', padding: '5px'}}
+          name="amount"
+          //style={{flex: '5', padding: '5px'}}
           placeholder="Number of Leagues"
           value={this.state.amount}
           onChange={this.onChange}
         />
         <input
-          type="create"
+          type="submit"
           value="Create"
           className="btn"
-          style={{flex: '1'}}
+          //style={{flex: '1'}}
         />
       </form>
     )
   }
 }
 
-CreateLeagues.propTypes = {
-}
+// CreateLeagues.propTypes = {
+// }
 
 export default CreateLeagues
