@@ -13,3 +13,38 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+.container {
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #555;
+  color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background: #666
+}
+
+.panel {
+  display: inline-block;
+  background: #555;
+  color: #f3f3f3;
+  width: 400px;
+  height: flex;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.center-container {
+  color: #f3f3f3;
+  width: 400px;
+  margin: 0 auto;
+  background-color: #262626;
+}
