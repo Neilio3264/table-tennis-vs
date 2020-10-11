@@ -45,7 +45,6 @@ class App extends Component {
         title: `League ${letters[i]}`,
         players: this.getLeaguePlayers(i, amount)
       }
-      // this.setState({panels: [...this.state.panels, newLeague]})
       stateArr.push(newLeague);
     }
     this.setState({panels: stateArr})

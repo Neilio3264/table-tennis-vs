@@ -4,7 +4,12 @@ export class Player extends Component {
   render() {
     return (
       <div>
-        <p>Player</p>
+        <div className = 'name'>
+          <p>{this.props.name}</p>
+        </div>
+        <div className = 'elo'>
+          <p>{this.props.elo} pts</p>
+        </div>
       </div>
     )
   }

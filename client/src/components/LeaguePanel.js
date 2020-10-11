@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import PlayerList from './PlayerList'
 
 export class LeaguePanel extends Component {
   getStyle = () => {
@@ -17,15 +18,7 @@ export class LeaguePanel extends Component {
           <h3>
               {this.props.title}
           </h3>
-        </div>
-        <div className = 'Players'>
-          <ul>
-            {this.props.players.map((player) => {
-              return <li>
-                {player}
-              </li>
-            })}
-          </ul>
+          <PlayerList players = {this.props.players}/>
         </div>
       </div>
     );
