@@ -13,8 +13,8 @@ export class LeaguePanel extends Component {
 
   render() {
     return (
-      <div>
-        <div className = 'Title' style={this.getStyle()}>
+      <div className = "center-container">
+        <div className = "panel" /*style={this.getStyle()}*/>
           <h3>
               {this.props.title}
           </h3>
