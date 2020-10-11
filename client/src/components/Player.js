@@ -4,12 +4,8 @@ export class Player extends Component {
   render() {
     return (
       <div>
-        <div className = 'name'>
-          <p>{this.props.name}</p>
-        </div>
-        <div className = 'elo'>
-          <p>{this.props.elo}</p>
-        </div>
+        <p>{this.props.name}</p>
+        <p>{this.props.elo}</p>
       </div>
     )
   }
